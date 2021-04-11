@@ -26,8 +26,8 @@ create TABLE departments (
 
 -- Create titles table
 create TABLE titles (
-	emp_no INT NOT NULL,
-	emp_title VARCHAR(35) NOT NULL
+	emp_title VARCHAR NOT NULL,
+	title_name VARCHAR(35) NOT NULL
 );
 
 -- Create department employee table
@@ -55,3 +55,8 @@ create TABLE dept_manager (
 
 -- View the tables to verify imports
 Select * FROM employees
+Select * FROM salaries
+Select * FROM departments
+Select * FROM dept_emp
+Select * FROM dept_manager
+Select * FROM titles
